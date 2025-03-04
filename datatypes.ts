@@ -35,3 +35,20 @@ let user_b = {name: "John", age: 20, email:"john.doe@email.com"}; // let initiat
 
 console.log(typeof user_b);
 
+let empploylist : Array<string> = ["Mike", "John", "Peter"]; // this is an any datatype
+
+enum color {
+    red,
+    green,
+    blue
+};
+let c: color = color.blue;
+
+
+const enum colorb {
+    purple,
+    yellow,
+};
+
+let c2: colorb = colorb.purple;
+

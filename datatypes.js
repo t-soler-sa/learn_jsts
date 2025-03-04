@@ -1,29 +1,37 @@
-"use strict";
-let lname = "John";
-let newname = lname.toUpperCase();
+var lname = "John";
+var newname = lname.toUpperCase();
 console.log(newname);
-let age;
+var age;
 age = 20;
-let dob = "20";
+var dob = "20";
 //console.log(age);
 //console.log(dob);
-let result = parseInt(dob);
+var result = parseInt(dob);
 //console.log(result);
 result += age;
 //console.log(result);
-let isvalid;
+var isvalid;
 isvalid = true;
 //console.log(isvalid);
-let emptylist = []; // this is an any datatype
-let listb;
+var emptylist = []; // this is an any datatype
+var listb;
 listb = ["John", "Doe"];
-let listc;
+var listc;
 listc = [1, 2, 3, 4, 5];
-let results = listc.filter((num) => num > 2);
+var results = listc.filter(function (num) { return num > 2; });
 //console.log(results);
-let reduction = listc.reduce((acc, num) => acc + num);
+var reduction = listc.reduce(function (acc, num) { return acc + num; });
 //console.log(reduction);
-let user = { name: "John", age: 20, email: "john.doe@email.com" };
-let email = user.email;
-console.log(email);
-console.log(typeof user);
+var user_b = { name: "John", age: 20, email: "john.doe@email.com" }; // let initiate an object
+console.log(typeof user_b);
+var empploylist = ["Mike", "John", "Peter"]; // this is an any datatype
+var color;
+(function (color) {
+    color[color["red"] = 0] = "red";
+    color[color["green"] = 1] = "green";
+    color[color["blue"] = 2] = "blue";
+})(color || (color = {}));
+;
+var c = color.blue;
+;
+var c2 = 0 /* colorb.purple */;
